@@ -7,7 +7,7 @@ const Profiles = (props: any) => {
       <div className="relative flex flex-col items-center p-6 mt-12 border-2 border-blue-400 shadow-xl rounded-2xl">
         <div className="absolute w-24 h-24 overflow-hidden border-2 border-blue-400 rounded-full -top-10">
           <img
-            className="object-contain object-center aspect-square"
+            className="object-contain object-center bg-white aspect-square"
             src={props.image}
             alt=""
           />
