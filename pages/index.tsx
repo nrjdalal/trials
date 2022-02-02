@@ -14,7 +14,9 @@ const index = () => {
             />
           </div>
 
-          <h2 className="pt-20 text-3xl font-medium">{props.name}</h2>
+          <h2 className="pt-20 text-3xl italic font-medium text-blue-500">
+            {props.name}
+          </h2>
           <p className="text-xl">{props.price}</p>
           <div className="flex gap-4 pt-6">
             <FaFacebook className="w-8 h-8 text-blue-500" />
