@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { FaInstagram, FaTwitter } from 'react-icons/fa'
+import { FaDiscord, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const Profiles = (props: any) => {
   return (
@@ -22,6 +22,8 @@ const Profiles = (props: any) => {
           {/* <div className="rounded-full border-2 border-blue-400 p-1.5 text-blue-400"> */}
           <FaTwitter className="w-8 h-8" />
           {/* </div> */}
+
+          <FaFacebook className="w-8 h-8" />
         </div>
       </div>
     </>
