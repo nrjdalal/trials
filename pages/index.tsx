@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
+import { BsCollectionPlay } from 'react-icons/bs'
+import { FaFacebook, FaInstagram, FaPlay, FaTwitter } from 'react-icons/fa'
 
 const index = () => {
   const Profiles = (props: any) => {
@@ -14,10 +15,15 @@ const index = () => {
             />
           </div>
 
-          <h2 className="pt-20 text-3xl italic font-medium text-blue-500">
+          <div className="pt-20">
+            <BsCollectionPlay className="w-8 h-8 text-blue-500" />
+          </div>
+
+          <h2 className="pt-6 text-3xl font-medium tracking-wide text-blue-500">
             {props.name}
           </h2>
-          <p className="text-xl">{props.price}</p>
+          <p className="text-xl italic">{props.price}</p>
+
           <div className="flex gap-4 pt-6">
             <FaFacebook className="w-8 h-8 text-blue-500" />
 
