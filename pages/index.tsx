@@ -1,36 +1,33 @@
 import Head from 'next/head'
-import { FaDiscord, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
-
-const Profiles = (props: any) => {
-  return (
-    <>
-      <div className="relative flex flex-col items-center p-6 mt-20 border-2 border-blue-400 shadow-xl rounded-2xl">
-        <div className="absolute w-40 h-40 overflow-hidden border-2 border-blue-400 rounded-full -top-20">
-          <img
-            className="object-contain object-center bg-white aspect-square"
-            src={props.image}
-            alt=""
-          />
-        </div>
-
-        <h2 className="pt-20 text-3xl font-medium">{props.name}</h2>
-        <p className="text-xl">{props.price}</p>
-        <div className="flex gap-4 pt-6">
-          {/* <div className="rounded-full border-2 border-blue-400 p-1.5 text-blue-400"> */}
-          <FaInstagram className="w-8 h-8" />
-          {/* </div> */}
-          {/* <div className="rounded-full border-2 border-blue-400 p-1.5 text-blue-400"> */}
-          <FaTwitter className="w-8 h-8" />
-          {/* </div> */}
-
-          <FaFacebook className="w-8 h-8" />
-        </div>
-      </div>
-    </>
-  )
-}
+import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 const index = () => {
+  const Profiles = (props: any) => {
+    return (
+      <>
+        <div className="relative flex flex-col items-center p-6 mt-20 bg-white border-2 border-blue-400 shadow-2xl rounded-2xl">
+          <div className="absolute w-40 h-40 overflow-hidden border-2 border-blue-400 rounded-full -top-20">
+            <img
+              className="object-contain object-center bg-white aspect-square"
+              src={props.image}
+              alt=""
+            />
+          </div>
+
+          <h2 className="pt-20 text-3xl font-medium">{props.name}</h2>
+          <p className="text-xl">{props.price}</p>
+          <div className="flex gap-4 pt-6">
+            <FaFacebook className="w-8 h-8 text-blue-500" />
+
+            <FaInstagram className="w-8 h-8 text-pink-400" />
+
+            <FaTwitter className="w-8 h-8 text-blue-500" />
+          </div>
+        </div>
+      </>
+    )
+  }
+
   return (
     <>
       <Head>
@@ -38,7 +35,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="py-20">
+      <div className="py-20 bg-slate-100">
         <div className="grid max-w-screen-lg grid-cols-1 gap-6 px-6 mx-auto sm:grid-cols-2 lg:grid-cols-3">
           <Profiles
             image="https://source.unsplash.com/random/500x500/?guy,alfa"
