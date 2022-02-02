@@ -4,8 +4,8 @@ import { FaInstagram, FaTwitter } from 'react-icons/fa'
 const Profiles = (props: any) => {
   return (
     <>
-      <div className="relative flex flex-col items-center p-6 mt-16 border-2 border-blue-400 shadow-xl rounded-2xl">
-        <div className="absolute w-32 h-32 overflow-hidden border-2 border-blue-400 rounded-full -top-16">
+      <div className="relative flex flex-col items-center p-6 mt-20 border-2 border-blue-400 shadow-xl rounded-2xl">
+        <div className="absolute w-40 h-40 overflow-hidden border-2 border-blue-400 rounded-full -top-20">
           <img
             className="object-contain object-center bg-white aspect-square"
             src={props.image}
@@ -13,7 +13,7 @@ const Profiles = (props: any) => {
           />
         </div>
 
-        <h2 className="pt-16 text-3xl font-medium">{props.name}</h2>
+        <h2 className="pt-20 text-3xl font-medium">{props.name}</h2>
         <p className="text-xl">{props.price}</p>
         <div className="flex gap-4 pt-6">
           {/* <div className="rounded-full border-2 border-blue-400 p-1.5 text-blue-400"> */}
