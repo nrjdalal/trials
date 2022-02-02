@@ -36,7 +36,7 @@ const index = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="w-screen h-screen py-20 bg-slate-100">
+      <div className="py-20">
         <div className="grid max-w-screen-lg grid-cols-1 gap-6 px-6 mx-auto sm:grid-cols-2 lg:grid-cols-3">
           <Profiles
             image="https://source.unsplash.com/random/500x500/?guy,alfa"
