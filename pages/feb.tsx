@@ -4,30 +4,40 @@ const index = () => {
   const Device = () => {
     return (
       <>
-        <div className="bg-red-800">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-          facere quam illum ea laborum quibusdam ducimus accusantium consequatur
-          animi distinctio eveniet ipsam ratione quod provident, ut aliquid
-          maxime nostrum omnis. Consequatur excepturi quis quod atque quia, id
-          aspernatur eaque cumque eligendi velit modi sint maiores iusto alias
-          dolorem, necessitatibus perferendis impedit ad accusantium porro
-          labore magnam in. Sequi, rerum necessitatibus. Vitae autem in maxime
-          maiores, veniam incidunt facilis, provident error repellat sapiente
-          magni nostrum repellendus, fuga quis. Dolor eveniet explicabo nemo
-          provident magnam, at dolorum corrupti officiis minima, earum vero? A
-          neque dolorum, perferendis excepturi facilis nam possimus fuga quo
-          velit consectetur ipsam magnam voluptates! Laborum vero fugit debitis
-          doloribus neque architecto, odio sint ut est voluptatibus cupiditate
-          incidunt quod? Vel sapiente eaque libero. Quo molestiae ab voluptatem
-          voluptas, ea ad vel? Facilis corrupti, consectetur quisquam,
-          voluptatibus aliquid quis harum ipsa mollitia saepe atque laboriosam a
-          nemo, sed quos quam. Corrupti nemo, aut, repudiandae odit, tenetur
-          impedit adipisci odio reiciendis dolor earum in a mollitia omnis
-          corporis distinctio exercitationem pariatur qui nam autem dolore velit
-          possimus nihil sint maxime. Quisquam. Aliquam sapiente, saepe eveniet
-          consectetur cumque magni optio. Repellendus eveniet adipisci mollitia
-          nihil sit commodi quasi vero, expedita eligendi natus reprehenderit,
-          distinctio qui ut ab consequuntur modi illum rem quos.
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+          quidem laborum eaque officia ipsam similique expedita excepturi sequi,
+          illo sit voluptatem fugit atque, aperiam culpa odit numquam quo rem
+          quas! Possimus labore pariatur ipsam iste similique saepe illum
+          quaerat dolor explicabo molestias, iure ad iusto accusamus placeat
+          recusandae quibusdam inventore! Perferendis provident repellendus
+          culpa aspernatur error sint accusamus impedit incidunt. Unde veritatis
+          aspernatur reiciendis numquam minus quidem reprehenderit nemo quis
+          fuga, voluptatibus mollitia perferendis accusantium aut, in impedit
+          enim quae! Sequi vero quibusdam, doloribus cum harum voluptatum
+          aliquam ipsam dolor. Id provident cum est sint eos numquam,
+          repudiandae fuga maiores sit facere omnis! Quos, numquam qui! Placeat
+          quis molestias neque dolores! Et dolore earum ratione, itaque natus
+          eum reiciendis quos! Consequatur atque facere perferendis neque ea
+          tempora! Repudiandae error id iure laboriosam officiis harum porro?
+          Enim cumque ex distinctio aperiam, est corporis magni ratione impedit
+          ab, hic adipisci explicabo minus. Sed eaque quo numquam doloremque,
+          esse est illo quia ratione vel fuga quasi reiciendis tempora magnam
+          enim cupiditate laborum voluptatem adipisci ut animi ab tempore
+          consectetur officia nesciunt! Distinctio, ullam? Fugit rem quas, animi
+          accusantium, tempore totam rerum facilis dolore porro, nostrum fugiat
+          eius officiis sapiente laboriosam. Aspernatur fugit aliquid incidunt
+          at inventore aut, labore quis, ab amet, quo dolorum? Adipisci quaerat
+          vitae inventore, ut officiis, rerum quidem ab dolores mollitia
+          voluptate repellendus ducimus! Culpa omnis molestias atque quam. Iste
+          aut vel eum dolorum molestias earum natus totam in laboriosam!
+          Voluptatibus, expedita quis! Perferendis aut reiciendis itaque quae
+          magni, omnis modi nihil rem, veritatis commodi placeat nostrum
+          voluptatum illum culpa aliquam id fugiat. Distinctio cupiditate ipsa
+          maiores, officia voluptatibus vitae. Ipsa voluptates similique,
+          debitis officia expedita incidunt aperiam quos, iure porro optio
+          libero laudantium autem, beatae possimus odio maxime sit nemo.
+          Impedit, reiciendis quidem provident eum mollitia nostrum aut illo.
         </div>
       </>
     )
@@ -37,14 +47,17 @@ const index = () => {
     <>
       <div className="flex items-center justify-center w-screen h-screen">
         <img
-          className="absolute top-1/2 left-1/2 z-10 hidden h-[926px] -translate-x-1/2 -translate-y-1/2 sm:block"
+          className="absolute top-1/2 left-1/2  hidden h-[926px] -translate-x-1/2 -translate-y-1/2 sm:block"
           src="/Apple iPhone 13 Pro Max — Sierra Blue.png"
           alt=""
         />
 
-        <div className="hidden h-[811px] w-[375px] sm:block">
+        <div className="z-10 hidden h-[812px] w-[376px]  sm:block">
           <div className="h-[35px]" />
-          <div className="h-[776px] overflow-y-scroll">
+          <div
+            id="noScroll"
+            className="h-[777px] overflow-y-scroll rounded-b-[45px]"
+          >
             <Device />
           </div>
         </div>
@@ -53,6 +66,17 @@ const index = () => {
           Current not available on smaller devices
         </div>
       </div>
+
+      <style jsx>{`
+        #noScroll::-webkit-scrollbar {
+          display: none;
+        }
+
+        #noScroll {
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+        }
+      `}</style>
     </>
   )
 }
