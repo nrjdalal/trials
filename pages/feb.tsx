@@ -37,7 +37,7 @@ const index = () => {
     <>
       <div className="flex items-center justify-center w-screen h-screen">
         <img
-          className="absolute top-1/2 left-1/2 z-10 hidden h-[926px] -translate-x-1/2 -translate-y-1/2 sm:flex"
+          className="absolute top-1/2 left-1/2 z-10 hidden h-[926px] -translate-x-1/2 -translate-y-1/2 sm:block"
           src="/Apple iPhone 13 Pro Max — Sierra Blue.png"
           alt=""
         />
