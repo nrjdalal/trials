@@ -45,9 +45,9 @@ const index = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center w-screen h-screen">
+      <div className="flex items-center justify-center w-screen h-full">
         <img
-          className="absolute z-20 hidden h-screen -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-30 sm:block"
+          className="absolute z-20 hidden h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-30 sm:block"
           src="/Apple iPhone 13 Pro Max — Sierra Blue.png"
           alt=""
         />
