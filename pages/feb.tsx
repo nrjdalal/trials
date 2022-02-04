@@ -53,7 +53,7 @@ const index = () => {
       </div>
 
       {/* 640px view */}
-      <div className="relative items-center justify-center hidden w-screen h-screen mt-4 sm:flex">
+      <div className="relative mt-4 hidden h-[98%] w-screen items-center justify-center sm:flex">
         <div className="absolute top-4 aspect-[0.47/1] h-[92%] rounded-3xl bg-gray-900" />
 
         <img className="absolute h-full" src="/md-iPhone-13-Pro.png" alt="" />
