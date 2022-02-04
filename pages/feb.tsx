@@ -47,7 +47,13 @@ const index = () => {
 
   return (
     <>
-      <div className="relative flex items-center justify-center w-screen h-screen mt-4">
+      {/* Mobile view */}
+      <div className="sm:hidden">
+        <Device />
+      </div>
+
+      {/* 640px view */}
+      <div className="relative items-center justify-center hidden w-screen h-screen mt-4 sm:flex">
         <div className="absolute top-4 aspect-[0.47/1] h-[92%] rounded-3xl bg-gray-900" />
 
         <img className="absolute h-full" src="/md-iPhone-13-Pro.png" alt="" />
