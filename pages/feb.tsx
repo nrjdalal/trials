@@ -51,10 +51,14 @@ const index = () => {
           </div>
         </div>
 
-        <div className="w-full h-full sm:hidden">
+        {/* <div className="w-full h-full sm:hidden">
           <div>
             <Device />
           </div>
+        </div> */}
+
+        <div className="p-5 sm:hidden">
+          Current not available on smaller devices
         </div>
       </div>
     </>
