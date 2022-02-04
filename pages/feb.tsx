@@ -42,20 +42,12 @@ const index = () => {
           alt=""
         />
 
-        <div className="hidden h-[811px] w-[375px] sm:flex">
-          <div>
-            <div className="h-[35px]" />
-            <div className="h-[776px] overflow-y-scroll">
-              <Device />
-            </div>
-          </div>
-        </div>
-
-        {/* <div className="w-full h-full sm:hidden">
-          <div>
+        <div className="hidden h-[811px] w-[375px] sm:block">
+          <div className="h-[35px]" />
+          <div className="h-[776px] overflow-y-scroll">
             <Device />
           </div>
-        </div> */}
+        </div>
 
         <div className="p-5 sm:hidden">
           Current not available on smaller devices
