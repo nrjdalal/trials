@@ -46,13 +46,15 @@ const index = () => {
   return (
     <>
       <div className="flex items-center justify-center w-screen h-full">
-        <img
-          className="absolute z-20 hidden h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-30 sm:block"
-          src="/Apple iPhone 13 Pro Max — Sierra Blue.png"
-          alt=""
-        />
+        <div className="absolute top-1/2 left-[49.99%] z-20 hidden aspect-[0.54/1] h-full -translate-x-[50.01%] -translate-y-1/2  sm:block">
+          <img
+            className="w-full h-full"
+            src="/Apple iPhone 13 Pro Max — Sierra Blue.png"
+            alt=""
+          />
+        </div>
 
-        <div className="z-10 hidden aspect-[0.463/1] h-[87.5%] rounded-[32px] bg-red-300 sm:block">
+        <div className="z-10 hidden aspect-[0.463/1] h-[87.5%] rounded-[32px] bg-black opacity-70 sm:block">
           <div className="h-[35px]" />
           <div id="noScroll" className="overflow-y-scroll ">
             <Device />
