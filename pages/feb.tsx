@@ -5,39 +5,41 @@ const index = () => {
     return (
       <>
         <div className="bg-red-200">
-          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-          quidem laborum eaque officia ipsam similique expedita excepturi sequi,
-          illo sit voluptatem fugit atque, aperiam culpa odit numquam quo rem
-          quas! Possimus labore pariatur ipsam iste similique saepe illum
-          quaerat dolor explicabo molestias, iure ad iusto accusamus placeat
-          recusandae quibusdam inventore! Perferendis provident repellendus
-          culpa aspernatur error sint accusamus impedit incidunt. Unde veritatis
-          aspernatur reiciendis numquam minus quidem reprehenderit nemo quis
-          fuga, voluptatibus mollitia perferendis accusantium aut, in impedit
-          enim quae! Sequi vero quibusdam, doloribus cum harum voluptatum
-          aliquam ipsam dolor. Id provident cum est sint eos numquam,
-          repudiandae fuga maiores sit facere omnis! Quos, numquam qui! Placeat
-          quis molestias neque dolores! Et dolore earum ratione, itaque natus
-          eum reiciendis quos! Consequatur atque facere perferendis neque ea
-          tempora! Repudiandae error id iure laboriosam officiis harum porro?
-          Enim cumque ex distinctio aperiam, est corporis magni ratione impedit
-          ab, hic adipisci explicabo minus. Sed eaque quo numquam doloremque,
-          esse est illo quia ratione vel fuga quasi reiciendis tempora magnam
-          enim cupiditate laborum voluptatem adipisci ut animi ab tempore
-          consectetur officia nesciunt! Distinctio, ullam? Fugit rem quas, animi
-          accusantium, tempore totam rerum facilis dolore porro, nostrum fugiat
-          eius officiis sapiente laboriosam. Aspernatur fugit aliquid incidunt
-          at inventore aut, labore quis, ab amet, quo dolorum? Adipisci quaerat
-          vitae inventore, ut officiis, rerum quidem ab dolores mollitia
-          voluptate repellendus ducimus! Culpa omnis molestias atque quam. Iste
-          aut vel eum dolorum molestias earum natus totam in laboriosam!
-          Voluptatibus, expedita quis! Perferendis aut reiciendis itaque quae
-          magni, omnis modi nihil rem, veritatis commodi placeat nostrum
-          voluptatum illum culpa aliquam id fugiat. Distinctio cupiditate ipsa
-          maiores, officia voluptatibus vitae. Ipsa voluptates similique,
-          debitis officia expedita incidunt aperiam quos, iure porro optio
-          libero laudantium autem, beatae possimus odio maxime sit nemo.
-          Impedit, reiciendis quidem provident eum mollitia nostrum aut illo. */}
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, in
+          quis consectetur maiores delectus commodi, corporis officiis dolorum
+          eligendi necessitatibus quod aliquid quia non velit quo voluptatibus
+          explicabo quidem praesentium. Enim fugit obcaecati, cum autem quasi
+          laudantium, quam ea rem ducimus consequuntur libero sequi error
+          incidunt fuga repudiandae iusto, assumenda dolore quis? Quam
+          consequatur eius magnam, voluptatem inventore repellat velit. Magni
+          saepe itaque at impedit nisi dolorem molestias temporibus, voluptates
+          harum dignissimos, laudantium veniam quidem cum deleniti mollitia
+          iusto vel quos! Adipisci nobis totam repellendus perspiciatis
+          consequatur quasi officia odit! Ea quis soluta commodi delectus
+          mollitia eligendi facere, ullam odio eius amet modi blanditiis
+          laudantium rem consequatur provident veniam quia ipsa dolores
+          repellat. Dolor quas modi doloremque consequatur repellat animi? Ut
+          reprehenderit praesentium minima ipsum perferendis doloribus sit
+          itaque quo at debitis, aliquid iste enim architecto soluta temporibus
+          eligendi fuga suscipit impedit? Dolorem ea quia, in aut iure ab rem.
+          Esse veniam, beatae est quaerat dolore hic nostrum veritatis laborum
+          consectetur sunt delectus ut voluptatum obcaecati. Sequi
+          necessitatibus beatae numquam repellat, exercitationem cum omnis, est
+          tempore deleniti esse vitae voluptates! Commodi eius molestias magnam
+          id doloribus culpa consequuntur assumenda non distinctio hic magni
+          quis, laudantium rem pariatur deleniti est maiores tempore eveniet at.
+          At quos delectus expedita ipsa, laborum totam? Error tempora nemo eum
+          eius facere a, repudiandae, suscipit corporis nesciunt excepturi
+          eveniet aliquam cumque odio possimus dolorem nulla nam quia! Sed
+          perferendis consequuntur ex maxime nemo rem delectus praesentium! Ab
+          est consequatur fugit a quas nesciunt tempore dolorum officia
+          reiciendis sequi atque molestias mollitia dolores expedita,
+          reprehenderit hic, quod ipsum recusandae totam ratione? Totam fugiat
+          porro maiores qui doloremque. Nisi voluptate dignissimos harum dolorum
+          illo dolore sit reprehenderit corrupti laudantium delectus, deleniti
+          tempora inventore adipisci iusto maxime, repellat nostrum
+          voluptatibus? Doloribus atque dolores consectetur exercitationem omnis
+          quas? Exercitationem, culpa.
         </div>
       </>
     )
@@ -45,30 +47,27 @@ const index = () => {
 
   return (
     <>
-      <div className="flex items-center justify-center w-screen h-full">
-        <div className="absolute top-1/2 left-[49.99%] z-20 hidden aspect-[0.54/1] h-full -translate-x-[50.01%] -translate-y-1/2  sm:block">
-          <img
-            className="w-full h-full"
-            src="/Apple iPhone 13 Pro Max — Sierra Blue.png"
-            alt=""
-          />
-        </div>
+      <div className="relative flex items-center justify-center w-screen h-screen mt-4">
+        <div className="absolute top-4 aspect-[0.47/1] h-[92%] rounded-3xl bg-gray-900" />
 
-        <div className="z-10 hidden aspect-[0.463/1] h-[87.5%] rounded-[32px] bg-black opacity-70 sm:block">
-          <div className="h-[35px]" />
-          <div id="noScroll" className="overflow-y-scroll ">
-            <Device />
-          </div>
-        </div>
+        <img className="absolute h-full" src="/md-iPhone-13-Pro.png" alt="" />
 
-        <div className="p-5 sm:hidden">
-          Current not available on smaller devices
+        <div
+          id="hideScrollbar"
+          className="z-10 aspect-[121/250] h-[88%] overflow-y-scroll rounded-b-[40px] rounded-t-[1%]"
+        >
+          <Device />
         </div>
       </div>
 
       <style jsx>{`
-        #noScroll::-webkit-scrollbar {
+        #hideScrollbar::-webkit-scrollbar {
           display: none;
+        }
+
+        #hideScrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </>
