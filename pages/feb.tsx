@@ -4,8 +4,8 @@ const index = () => {
   const Device = () => {
     return (
       <>
-        <div>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+        <div className="bg-red-200">
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
           quidem laborum eaque officia ipsam similique expedita excepturi sequi,
           illo sit voluptatem fugit atque, aperiam culpa odit numquam quo rem
           quas! Possimus labore pariatur ipsam iste similique saepe illum
@@ -37,7 +37,7 @@ const index = () => {
           maiores, officia voluptatibus vitae. Ipsa voluptates similique,
           debitis officia expedita incidunt aperiam quos, iure porro optio
           libero laudantium autem, beatae possimus odio maxime sit nemo.
-          Impedit, reiciendis quidem provident eum mollitia nostrum aut illo.
+          Impedit, reiciendis quidem provident eum mollitia nostrum aut illo. */}
         </div>
       </>
     )
@@ -47,17 +47,14 @@ const index = () => {
     <>
       <div className="flex items-center justify-center w-screen h-screen">
         <img
-          className="absolute top-1/2 left-1/2  hidden h-[926px] -translate-x-1/2 -translate-y-1/2 sm:block"
+          className="absolute z-20 hidden h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 opacity-30 sm:block"
           src="/Apple iPhone 13 Pro Max — Sierra Blue.png"
           alt=""
         />
 
-        <div className="z-10 hidden h-[812px] w-[376px]  sm:block">
+        <div className="z-10 hidden aspect-[0.463/1] h-[87.5%] rounded-[32px] bg-red-300 sm:block">
           <div className="h-[35px]" />
-          <div
-            id="noScroll"
-            className="h-[777px] overflow-y-scroll rounded-b-[45px]"
-          >
+          <div id="noScroll" className="h-full overflow-y-scroll ">
             <Device />
           </div>
         </div>
@@ -70,11 +67,6 @@ const index = () => {
       <style jsx>{`
         #noScroll::-webkit-scrollbar {
           display: none;
-        }
-
-        #noScroll {
-          -ms-overflow-style: none; /* IE and Edge */
-          scrollbar-width: none; /* Firefox */
         }
       `}</style>
     </>
